@@ -82,6 +82,15 @@
       "contributions": [
         "bug"
       ]
+    },
+    {
+      "login": "izakhearn",
+      "name": "Izak Hearn",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25284121?v=4",
+      "profile": "https://izakwebdesigns.co.za",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "commitType": "docs",
