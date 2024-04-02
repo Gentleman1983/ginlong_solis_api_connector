@@ -88,6 +88,9 @@ The grafana-dashboard-example.json file you could import in to Grafana if you us
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/MetPhoto"><img src="https://avatars.githubusercontent.com/u/2766363?v=4?s=100" width="100px;" alt="Mark"/><br /><sub><b>Mark</b></sub></a><br /><a href="https://github.com/Gentleman1983/ginlong_solis_api_connector/issues?q=author%3AMetPhoto" title="Bug reports">🐛</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/Stephen2615"><img src="https://avatars.githubusercontent.com/u/43490186?v=4?s=100" width="100px;" alt="Stephen2615"/><br /><sub><b>Stephen2615</b></sub></a><br /><a href="https://github.com/Gentleman1983/ginlong_solis_api_connector/issues?q=author%3AStephen2615" title="Bug reports">🐛</a></td>
     </tr>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://izakwebdesigns.co.za"><img src="https://avatars.githubusercontent.com/u/25284121?v=4?s=100" width="100px;" alt="Izak Hearn"/><br /><sub><b>Izak Hearn</b></sub></a><br /><a href="https://github.com/Gentleman1983/ginlong_solis_api_connector/issues?q=author%3Aizakhearn" title="Bug reports">🐛</a></td>
+    </tr>
   </tbody>
   <tfoot>
     <tr>
