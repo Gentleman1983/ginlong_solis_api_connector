@@ -2,7 +2,7 @@
 This document provides an overview to the changes on the different releases...
 
 ## NEXT
-* t.b.d.
+* Work around for API update on January 10th, 2025.
 
 ## 3.0.0
 > [!WARNING]  

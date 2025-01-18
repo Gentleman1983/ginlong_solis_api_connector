@@ -315,6 +315,7 @@ def do_work():  # pylint: disable=too-many-locals disable=too-many-statements
                            'Daily_Generation': float(dict_detail['eToday'] * calculate_unit_multiplicator("kWh",dict_detail['eTodayStr'])),  # pylint: disable=line-too-long
                            'Monthly_Generation': float(dict_detail['eMonth'] * calculate_unit_multiplicator("kWh",dict_detail['eMonthStr'])),  # pylint: disable=line-too-long
                            'Annual_Generation': float(dict_detail['eYear'] * calculate_unit_multiplicator("kWh",dict_detail['eYearStr'])),  # pylint: disable=line-too-long
+                           'eYear': float(dict_detail['eYear']),
                            'Total_Generation': float(dict_detail['eTotal'] * calculate_unit_multiplicator("kWh",dict_detail['eTotalStr'])),  # pylint: disable=line-too-long
                            'Generation_Last_Month': get_last_month_generation(dict_year),
                            'Power_Grid_Total_Power': float(dict_detail['psum'] * calculate_unit_multiplicator("W",dict_detail['psumStr'])),  # pylint: disable=line-too-long
@@ -339,16 +340,16 @@ def do_work():  # pylint: disable=too-many-locals disable=too-many-statements
                 changelist_float.remove(key)
 
             dict_float = convert_dict_details_to_float(dict_detail, changelist_float)
-            dict_fields.update(dict_float)
+            #dict_fields.update(dict_float)
 
             # Convert boolean values
-            changelist_boolean = ["isShow"]
+            changelist_boolean = ["showChipEvent", "showDebugParam", "isESV2", "existEpm", "isShow", "isShowApparent", "isShowBattery", "isShowPowerFactor", "isShowInternalBatteryI"]
             dict_boolean = convert_dict_details_to_boolean(dict_detail, changelist_boolean)
-            dict_fields.update(dict_boolean)
+            #dict_fields.update(dict_boolean)
 
             # remove empty battery list
-            if len(dict_fields["batteryList"]) == 0:
-                dict_fields.pop("batteryList")
+            #if len(dict_fields["batteryList"]) == 0:
+                #dict_fields.pop("batteryList")
 
             # Read inverter_detail into dict
             influx_to_submit = [
