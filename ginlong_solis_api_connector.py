@@ -316,6 +316,9 @@ def do_work():  # pylint: disable=too-many-locals disable=too-many-statements
                            'Monthly_Generation': float(dict_detail['eMonth'] * calculate_unit_multiplicator("kWh",dict_detail['eMonthStr'])),  # pylint: disable=line-too-long
                            'Annual_Generation': float(dict_detail['eYear'] * calculate_unit_multiplicator("kWh",dict_detail['eYearStr'])),  # pylint: disable=line-too-long
                            'eYear': float(dict_detail['eYear']),
+                           'uAc1': float(dict_detail['uAc1']),
+                           'uAc2': float(dict_detail['uAc2']),
+                           'uAc3': float(dict_detail['uAc3']),
                            'Total_Generation': float(dict_detail['eTotal'] * calculate_unit_multiplicator("kWh",dict_detail['eTotalStr'])),  # pylint: disable=line-too-long
                            'Generation_Last_Month': get_last_month_generation(dict_year),
                            'Power_Grid_Total_Power': float(dict_detail['psum'] * calculate_unit_multiplicator("W",dict_detail['psumStr'])),  # pylint: disable=line-too-long
