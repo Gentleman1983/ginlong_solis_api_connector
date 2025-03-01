@@ -263,18 +263,18 @@ def do_work():  # pylint: disable=too-many-locals disable=too-many-statements
             average_value = float((inverter_data[field_phase_1] + inverter_data[field_phase_2] + inverter_data[field_phase_3]) / 3)  # pylint: disable=line-too-long
         return average_value
 
-    def convert_dict_details_to_float(dict_to_change, parameters):
-        for param in parameters:
-            dict_to_change[param] = float(dict_to_change[param])
-        return dict_to_change
+    #def convert_dict_details_to_float(dict_to_change, parameters):
+    #    for param in parameters:
+    #        dict_to_change[param] = float(dict_to_change[param])
+    #    return dict_to_change
 
-    def convert_dict_details_to_boolean(dict_to_change, parameters):
-        for param in parameters:
-            if dict_to_change[param]:
-                dict_to_change[param] = 1
-            else:
-                dict_to_change[param] = 0
-        return dict_to_change
+    #def convert_dict_details_to_boolean(dict_to_change, parameters):
+    #    for param in parameters:
+    #        if dict_to_change[param]:
+    #            dict_to_change[param] = 1
+    #        else:
+    #            dict_to_change[param] = 0
+    #    return dict_to_change
 
     def get_last_month_generation(dict_year):
         generation_last_month = 0.0
@@ -342,12 +342,12 @@ def do_work():  # pylint: disable=too-many-locals disable=too-many-statements
             for key in ignore_change_to_float:
                 changelist_float.remove(key)
 
-            dict_float = convert_dict_details_to_float(dict_detail, changelist_float)
+            #dict_float = convert_dict_details_to_float(dict_detail, changelist_float)
             #dict_fields.update(dict_float)
 
             # Convert boolean values
-            changelist_boolean = ["showChipEvent", "showDebugParam", "isESV2", "existEpm", "isShow", "isShowApparent", "isShowBattery", "isShowPowerFactor", "isShowInternalBatteryI"]
-            dict_boolean = convert_dict_details_to_boolean(dict_detail, changelist_boolean)
+            #changelist_boolean = ["showChipEvent", "showDebugParam", "isESV2", "existEpm", "isShow", "isShowApparent", "isShowBattery", "isShowPowerFactor", "isShowInternalBatteryI"] # pylint: disable=line-too-long
+            #dict_boolean = convert_dict_details_to_boolean(dict_detail, changelist_boolean)
             #dict_fields.update(dict_boolean)
 
             # remove empty battery list
@@ -405,7 +405,7 @@ def do_work():  # pylint: disable=too-many-locals disable=too-many-statements
                 # power generation (int, W)
                 "v2": inverter_data['pac'] * 1000,
                 # energy consumption (int, Wh)
-                "v3": inverter_data['homeLoadTotalEnergy'] * 1000,
+                "v3": inverter_data['homeLoadTodayEnergy'] * 1000,
                 # power consumption (int, W)
                 "v4": inverter_data['familyLoadPower'] * 1000,
                 # temperature (float, °C), not available by inverter data
