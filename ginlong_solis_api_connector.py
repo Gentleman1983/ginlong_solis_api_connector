@@ -263,18 +263,18 @@ def do_work():  # pylint: disable=too-many-locals disable=too-many-statements
             average_value = float((inverter_data[field_phase_1] + inverter_data[field_phase_2] + inverter_data[field_phase_3]) / 3)  # pylint: disable=line-too-long
         return average_value
 
-    def convert_dict_details_to_float(dict_to_change, parameters):
-        for param in parameters:
-            dict_to_change[param] = float(dict_to_change[param])
-        return dict_to_change
+    #def convert_dict_details_to_float(dict_to_change, parameters):
+    #    for param in parameters:
+    #        dict_to_change[param] = float(dict_to_change[param])
+    #    return dict_to_change
 
-    def convert_dict_details_to_boolean(dict_to_change, parameters):
-        for param in parameters:
-            if dict_to_change[param]:
-                dict_to_change[param] = 1
-            else:
-                dict_to_change[param] = 0
-        return dict_to_change
+    #def convert_dict_details_to_boolean(dict_to_change, parameters):
+    #    for param in parameters:
+    #        if dict_to_change[param]:
+    #            dict_to_change[param] = 1
+    #        else:
+    #            dict_to_change[param] = 0
+    #    return dict_to_change
 
     def get_last_month_generation(dict_year):
         generation_last_month = 0.0
