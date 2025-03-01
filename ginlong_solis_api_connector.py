@@ -342,12 +342,12 @@ def do_work():  # pylint: disable=too-many-locals disable=too-many-statements
             for key in ignore_change_to_float:
                 changelist_float.remove(key)
 
-            dict_float = convert_dict_details_to_float(dict_detail, changelist_float)
+            #dict_float = convert_dict_details_to_float(dict_detail, changelist_float)
             #dict_fields.update(dict_float)
 
             # Convert boolean values
-            changelist_boolean = ["showChipEvent", "showDebugParam", "isESV2", "existEpm", "isShow", "isShowApparent", "isShowBattery", "isShowPowerFactor", "isShowInternalBatteryI"]
-            dict_boolean = convert_dict_details_to_boolean(dict_detail, changelist_boolean)
+            #changelist_boolean = ["showChipEvent", "showDebugParam", "isESV2", "existEpm", "isShow", "isShowApparent", "isShowBattery", "isShowPowerFactor", "isShowInternalBatteryI"] # pylint: disable=line-too-long
+            #dict_boolean = convert_dict_details_to_boolean(dict_detail, changelist_boolean)
             #dict_fields.update(dict_boolean)
 
             # remove empty battery list
