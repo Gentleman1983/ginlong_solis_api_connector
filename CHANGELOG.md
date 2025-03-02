@@ -2,6 +2,9 @@
 This document provides an overview to the changes on the different releases...
 
 ## NEXT
+* tbd
+
+## 3.1.0
 * Work around for API update on January 10th, 2025.
 * Changes PVOutput Variable PV3 (energy comsuption) to API value `homeLoadTodayEnergy`.
 
