@@ -2,7 +2,7 @@
 This document provides an overview to the changes on the different releases...
 
 ## NEXT
-* tbd
+* Fixed some unit calculations.
 
 ## 3.1.0
 * Work around for API update on January 10th, 2025.
