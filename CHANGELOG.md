@@ -33,7 +33,7 @@ This document provides an overview to the changes on the different releases...
 ## 2.3.0
 * Added option to override detection for single phase inverters. ([#14](https://github.com/Gentleman1983/ginlong_solis_api_connector/issues/14))
 * Fixed calculation on some data fields to fix issues on monitoring. ([#16](https://github.com/Gentleman1983/ginlong_solis_api_connector/issues/16), [#22](https://github.com/Gentleman1983/ginlong_solis_api_connector/issues/22))
-* Fixed mixing up of some PVoutput values (`v3` & `v4`). ([#17](https://github.com/Gentleman1983/ginlong_solis_api_connector/issues/17))
+* Fixed mixing up of some PVOutput values (`v3` & `v4`). ([#17](https://github.com/Gentleman1983/ginlong_solis_api_connector/issues/17))
 * Fixed issue on influx db where some values where interpreted as integers instead of floats when value is `0`. This lead to problems in data import, e.g. during the nighttime. ([#18](https://github.com/Gentleman1983/ginlong_solis_api_connector/issues/18))
 
 ## 2.2.0
