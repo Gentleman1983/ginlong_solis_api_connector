@@ -37,7 +37,7 @@ This document provides an overview to the changes on the different releases...
 * Fixed issue on influx db where some values where interpreted as integers instead of floats when value is `0`. This lead to problems in data import, e.g. during the nighttime. ([#18](https://github.com/Gentleman1983/ginlong_solis_api_connector/issues/18))
 
 ## 2.2.0
-* Added configurability for optional PVoutput fields `pv7` to `pv12` for subscribers of PVoutput. ([#4](https://github.com/Gentleman1983/ginlong_solis_api_connector/issues/4))
+* Added configurability for optional PVOutput fields `pv7` to `pv12` for subscribers of PVOutput. ([#4](https://github.com/Gentleman1983/ginlong_solis_api_connector/issues/4))
 * Fixed missing usage of inverter ID ENV value. ([#8](https://github.com/Gentleman1983/ginlong_solis_api_connector/issues/8))
 * Fixed some conversion issues on integer ENV values like inverter ID, ports, etc. ([#6](https://github.com/Gentleman1983/ginlong_solis_api_connector/issues/6))
 * Fixed some PyLint issues or marked them as false positives or as better readable containing them on source code.
