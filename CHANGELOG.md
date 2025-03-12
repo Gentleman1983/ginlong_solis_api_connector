@@ -6,7 +6,7 @@ This document provides an overview to the changes on the different releases...
 
 ## 3.1.0
 * Work around for API update on January 10th, 2025.
-* Changes PVOutput Variable PV3 (energy comsuption) to API value `homeLoadTodayEnergy`.
+* Changes PVOutput Variable PV3 (energy consumption) to API value `homeLoadTodayEnergy`.
 
 ## 3.0.0
 > [!WARNING]  
