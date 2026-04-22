@@ -513,13 +513,13 @@ def main():
 global NEXT_RUN_YES  # pylint: disable=global-at-module-level
 
 GET_LOGLEVEL = os.environ['LOG_LEVEL']
-LOGLEVEL = logging.INFO
+log_lovel = logging.INFO
 if GET_LOGLEVEL.lower() == "info":
-    LOGLEVEL = logging.INFO
+    log_lovel = logging.INFO
 elif GET_LOGLEVEL.lower() == "error":
-    LOGLEVEL = logging.ERROR
+    log_lovel = logging.ERROR
 elif GET_LOGLEVEL.lower() == "debug":
-    LOGLEVEL = logging.DEBUG
+    log_lovel = logging.DEBUG
 
 logging.basicConfig(level=LOGLEVEL, format='%(asctime)s %(levelname)s %(message)s')
 logging.info('Started ginlong-solis-api-connector')
@@ -527,9 +527,9 @@ logging.info('Started ginlong-solis-api-connector')
 schedule.every(5).minutes.at(':00').do(main).run()
 
 while True:
-    if NEXT_RUN_YES == 1:
+    if NEXT_RUN_YES == 1: # pylint: disable=invalid-name
         next_run = schedule.next_run().strftime('%d/%m/%Y %H:%M:%S')
         logging.info('Next run is scheduled at %s', next_run)
-        NEXT_RUN_YES = 0
+        NEXT_RUN_YES = 0 # pylint: disable=invalid-name
     schedule.run_pending()
     time.sleep(1)
